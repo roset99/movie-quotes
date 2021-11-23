@@ -1,3 +1,5 @@
+import './NewQuoteButton.css'
+
 const NewQuoteButton =({onQuoteButtonClicked, updateVillager}) => {
 
     const handleClick = () => {

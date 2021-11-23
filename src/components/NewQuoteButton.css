@@ -1,0 +1,9 @@
+body{
+    width: 100%;
+}
+button{
+    width: 80%;
+    background-color: lightcoral;
+    color: white;
+    border-radius: 5%;
+}

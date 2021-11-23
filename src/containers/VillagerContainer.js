@@ -13,13 +13,15 @@ const VillagerContainer = ({onQuoteButtonClicked}) => {
     const updateVillagerData = () => {
         console.log("update animal crossing villager info");
         const num = randomNum();
-        fetch(`http://acnhapi.com/v1/villagers/%d`,num)
+        fetch(`http://acnhapi.com/v1/villagers/4`)
             .then(response => response.json())
             .then(data => setVillager(data))
     };
 
     useEffect(() => {
-        updateVillagerData();
+        fetch(`http://acnhapi.com/v1/villagers/4`)
+            .then(response => response.json())
+            .then(data => setVillager(data))
     }, []);
 
     return (

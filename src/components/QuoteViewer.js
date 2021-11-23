@@ -1,3 +1,4 @@
+import './QuoteViewer.css'
 const QuoteViewer = ({quote}) => {
 
     return(
